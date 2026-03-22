@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u041F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{161FEB05-4BE6-483C-B496-6CF7B076134D}|proj.csproj|d:\\\u0443\u043D\u0438\u0432\u0435\u0440\\\u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u043F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{161FEB05-4BE6-483C-B496-6CF7B076134D}|proj.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E6B7994-0AE6-B004-6982-5CF84F589B68}|proj.csproj|d:\\\u0443\u043D\u0438\u0432\u0435\u0440\\\u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u043F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\shared\\pricehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E6B7994-0AE6-B004-6982-5CF84F589B68}|proj.csproj|solutionrelative:shared\\pricehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E6B7994-0AE6-B004-6982-5CF84F589B68}|proj.csproj|d:\\\u0443\u043D\u0438\u0432\u0435\u0440\\\u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u043F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\shared\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E6B7994-0AE6-B004-6982-5CF84F589B68}|proj.csproj|solutionrelative:shared\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E6B7994-0AE6-B004-6982-5CF84F589B68}|proj.csproj|d:\\\u0443\u043D\u0438\u0432\u0435\u0440\\\u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u043F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E6B7994-0AE6-B004-6982-5CF84F589B68}|proj.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,6 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PriceHistory.cs",
+              "DocumentMoniker": "D:\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u041F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\Shared\\PriceHistory.cs",
+              "RelativeDocumentMoniker": "Shared\\PriceHistory.cs",
+              "ToolTip": "D:\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u041F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\Shared\\PriceHistory.cs",
+              "RelativeToolTip": "Shared\\PriceHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T14:54:11.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Currency.cs",
+              "DocumentMoniker": "D:\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u041F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\Shared\\Currency.cs",
+              "RelativeDocumentMoniker": "Shared\\Currency.cs",
+              "ToolTip": "D:\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u041F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\Shared\\Currency.cs",
+              "RelativeToolTip": "Shared\\Currency.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T14:53:38.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 4.5\\\u041F\u0440\u043E\u0444\u0435\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u043E\u0439 \u0438\u043D\u0436\u0438\u043D\u0435\u0440\u0438\u0438\\labs_prof\\prof_pract\\proj\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
