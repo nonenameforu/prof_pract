@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Market\" />
     <Folder Include="Crypto\" />
     <Folder Include="UI\" />
   </ItemGroup>

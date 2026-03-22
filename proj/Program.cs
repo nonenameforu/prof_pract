@@ -12,7 +12,7 @@ class Program
         var converter = new CurrencyConverter(fiatService);
         var chart = new ChartPrinter();
 
-        Console.WriteLine("Запуск биржи [MARKET MODULE]... симулируем 10 тиков.\n");
+        Console.WriteLine("Запуск биржи[MARKET MODULE and CRYPTO MODULE] ... симулируем 10 тиков.\n");
 
         for (int i = 0; i < 10; i++)
         {
