@@ -1,0 +1,52 @@
+### YamlMime:TableOfContent
+items:
+- uid: StockExchange.Crypto
+  name: StockExchange.Crypto
+  type: Namespace
+  items:
+  - uid: StockExchange.Crypto.CryptoCurrency
+    name: CryptoCurrency
+    type: Class
+  - uid: StockExchange.Crypto.CryptoMarketService
+    name: CryptoMarketService
+    type: Class
+  - uid: StockExchange.Crypto.CryptoPortfolio
+    name: CryptoPortfolio
+    type: Class
+- uid: StockExchange.Market
+  name: StockExchange.Market
+  type: Namespace
+  items:
+  - uid: StockExchange.Market.ExchangeRateService
+    name: ExchangeRateService
+    type: Class
+  - uid: StockExchange.Market.FiatCurrency
+    name: FiatCurrency
+    type: Class
+  - uid: StockExchange.Market.MarketAlert
+    name: MarketAlert
+    type: Class
+- uid: StockExchange.Shared
+  name: StockExchange.Shared
+  type: Namespace
+  items:
+  - uid: StockExchange.Shared.Currency
+    name: Currency
+    type: Class
+  - uid: StockExchange.Shared.PriceHistory
+    name: PriceHistory
+    type: Class
+- uid: StockExchange.UI
+  name: StockExchange.UI
+  type: Namespace
+  items:
+  - uid: StockExchange.UI.ChartPrinter
+    name: ChartPrinter
+    type: Class
+  - uid: StockExchange.UI.ConsoleDashboard
+    name: ConsoleDashboard
+    type: Class
+  - uid: StockExchange.UI.CurrencyConverter
+    name: CurrencyConverter
+    type: Class
+memberLayout: SamePage

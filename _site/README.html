@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Фондовая биржа — план проекта | doc </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Фондовая биржа — план проекта | doc ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/nonenameforu/prof_pract/blob/main/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="doc">
+            doc
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="фондовая-биржа--план-проекта">Фондовая биржа — план проекта</h1>
+
+<h2 id="описание-проекта">Описание проекта</h2>
+<p>Веб-приложение «Фондовая биржа» предназначено для отображения движения валют и криптовалют в режиме реального времени. Приложение реализует курсы обмена (доллар, рубль, юань), а также котировки двух и более криптовалют. Пользователь может отслеживать динамику курсов, конвертировать валюты и просматривать историю изменений.</p>
+<hr>
+<h2 id="архитектура-приложения">Архитектура приложения</h2>
+<p>Приложение строится по клиент-серверной архитектуре:</p>
+<ul>
+<li><strong>Клиентская часть</strong> — интерактивный интерфейс для работы с котировками, графиками и конвертером валют.</li>
+<li><strong>Серверная часть</strong> — API-сервер, агрегирующий данные из внешних источников (биржевые и крипто-API), хранящий историю и управляющий сессиями пользователей.</li>
+</ul>
+<hr>
+<h2 id="модули-клиентской-части">Модули клиентской части</h2>
+<h3 id="пользовательский-интерфейс">Пользовательский интерфейс</h3>
+<p>Клиентская часть предоставляет интуитивно понятный интерфейс для работы с биржевыми данными. Интерфейс включает:</p>
+<ul>
+<li>панель с актуальными котировками (USD, RUB, CNY и криптовалюты),</li>
+<li>интерактивные графики движения курсов,</li>
+<li>конвертер валют с мгновенным пересчётом.</li>
+</ul>
+<h3 id="модуль-отображения-котировок">Модуль отображения котировок</h3>
+<p>Основной модуль отображает текущие курсы всех поддерживаемых валют и криптовалют. Данные обновляются в реальном времени или с заданным интервалом. Курсы отображаются с указанием процентного изменения за день и цветовой индикацией (рост/падение).</p>
+<h3 id="модуль-графиков-и-визуализации">Модуль графиков и визуализации</h3>
+<p>Модуль строит интерактивные графики движения курсов за выбранный период (1 час, 1 день, 1 неделя, 1 месяц, 1 год). Поддерживаются линейный и свечной типы графиков. Пользователь может масштабировать и прокручивать график, а также сравнивать несколько валют одновременно.</p>
+<h3 id="модуль-конвертера-валют">Модуль конвертера валют</h3>
+<p>Позволяет пользователю быстро рассчитать сумму обмена между любыми поддерживаемыми валютами. При вводе суммы результат пересчитывается мгновенно с использованием актуального курса. Поддерживается обмен как между фиатными валютами, так и между фиатными и криптовалютами.</p>
+<h3 id="модуль-истории-и-аналитики">Модуль истории и аналитики</h3>
+<p>Пользователь имеет доступ к истории изменений курсов за произвольный период. История представлена в виде таблицы и графика с возможностью поиска и фильтрации по валюте и дате. Дополнительно отображается минимальное и максимальное значение курса за выбранный период.</p>
+<h3 id="модуль-уведомлений">Модуль уведомлений</h3>
+<p>Пользователь может настроить оповещения при достижении курсом заданного значения (например, «уведомить, когда USD/RUB превысит 95»). Уведомления приходят в браузер или на e-mail.</p>
+<h3 id="модуль-поддержки-адаптивного-дизайна">Модуль поддержки адаптивного дизайна</h3>
+<p>Интерфейс оптимизирован для различных устройств: веб-браузер, мобильный браузер, планшет. Реализованы адаптивные стили, поддержка сенсорных жестов (масштабирование графика, прокрутка), компактный вид котировок для малых экранов.</p>
+<h3 id="модуль-оптимизации">Модуль оптимизации</h3>
+<p>Для обеспечения мгновенного отклика применяются:</p>
+<ul>
+<li>кэширование последних полученных котировок,</li>
+<li>оптимизация сетевых запросов (WebSocket для потоковых данных),</li>
+<li>ленивая загрузка исторических данных при прокрутке графика.</li>
+</ul>
+<hr>
+<h2 id="модули-серверной-части">Модули серверной части</h2>
+<h3 id="модуль-агрегации-данных">Модуль агрегации данных</h3>
+<p>Серверная часть подключается к внешним API (например, ExchangeRate API, CoinGecko, Binance API) для получения актуальных котировок фиатных валют и криптовалют. Данные нормализуются в единый формат и передаются клиенту.</p>
+<h3 id="модуль-хранения-истории">Модуль хранения истории</h3>
+<p>Все полученные котировки сохраняются в базе данных с временными метками. Это позволяет строить графики за любой исторический период и проводить аналитику без обращения к внешним источникам.</p>
+<h3 id="модуль-аутентификации-и-пользовательских-настроек">Модуль аутентификации и пользовательских настроек</h3>
+<p>Пользователи могут регистрироваться и авторизоваться, чтобы сохранять персональные настройки: избранные валюты, пороговые значения для уведомлений, предпочитаемый период графика.</p>
+<h3 id="модуль-определения-валюты-по-геолокации">Модуль определения валюты по геолокации</h3>
+<p>Сервер определяет регион пользователя и автоматически выставляет приоритетную валюту на главной странице (например, для пользователей из России приоритет у RUB).</p>
+<h3 id="модуль-api-и-безопасности">Модуль API и безопасности</h3>
+<p>Серверная часть предоставляет REST API для клиента. Все запросы проходят валидацию. Реализована защита от злоупотреблений (rate limiting), а ключи внешних API хранятся только на сервере.</p>
+<hr>
+<h2 id="поддерживаемые-валюты">Поддерживаемые валюты</h2>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Валюта</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Фиатные</td>
+<td>Доллар США (USD)</td>
+</tr>
+<tr>
+<td>Фиатные</td>
+<td>Российский рубль (RUB)</td>
+</tr>
+<tr>
+<td>Фиатные</td>
+<td>Китайский юань (CNY)</td>
+</tr>
+<tr>
+<td>Криптовалюты</td>
+<td>Bitcoin (BTC)</td>
+</tr>
+<tr>
+<td>Криптовалюты</td>
+<td>Ethereum (ETH)</td>
+</tr>
+<tr>
+<td>Криптовалюты</td>
+<td>(расширяемый список)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="этапы-разработки">Этапы разработки</h2>
+<ol>
+<li>Проектирование архитектуры и выбор API-источников данных</li>
+<li>Разработка серверного модуля агрегации данных</li>
+<li>Разработка базовых компонентов UI (котировки, конвертер)</li>
+<li>Реализация модуля графиков и визуализации</li>
+<li>Реализация истории, уведомлений и пользовательских настроек</li>
+<li>Адаптация интерфейса под мобильные устройства</li>
+<li>Оптимизация производительности (кэш, WebSocket)</li>
+<li>Тестирование и деплой</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/nonenameforu/prof_pract/blob/main/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

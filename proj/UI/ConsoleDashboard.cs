@@ -3,24 +3,36 @@ using StockExchange.Crypto;
 
 namespace StockExchange.UI
 {
-    // Консольный дашборд — отображает все котировки
+    /// <summary>
+    /// Консольный дашборд. Отображает актуальные котировки фиатных валют
+    /// и криптовалют в виде форматированной таблицы в консоли.
+    /// </summary>
     public class ConsoleDashboard
     {
         private readonly ExchangeRateService _fiat;
         private readonly CryptoMarketService _crypto;
 
+        /// <summary>
+        /// Инициализирует дашборд с привязкой к сервисам данных.
+        /// </summary>
+        /// <param name="fiat">Сервис фиатных валют.</param>
+        /// <param name="crypto">Сервис криптовалют.</param>
         public ConsoleDashboard(ExchangeRateService fiat, CryptoMarketService crypto)
         {
             _fiat = fiat;
             _crypto = crypto;
         }
 
+        /// <summary>
+        /// Очищает консоль и выводит актуальную таблицу котировок:
+        /// сначала фиатные валюты, затем криптовалюты с индикатором тренда.
+        /// </summary>
         public void Render()
         {
             Console.Clear();
             Console.WriteLine("╔══════════════════════════════════════════════╗");
-            Console.WriteLine("║          ФОНДОВАЯ БИРЖА  v1.0               ║");
-            Console.WriteLine($"║  {DateTime.Now:dd.MM.yyyy  HH:mm:ss}                      ║");
+            Console.WriteLine("║          ФОНДОВАЯ БИРЖА  v1.0                ║");
+            Console.WriteLine($"║  {DateTime.Now:dd.MM.yyyy  HH:mm:ss}        ║");
             Console.WriteLine("╠══════════════════════════════════════════════╣");
             Console.WriteLine("║  ФИАТНЫЕ ВАЛЮТЫ                              ║");
 

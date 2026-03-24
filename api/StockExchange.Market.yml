@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: StockExchange.Market
+  commentId: N:StockExchange.Market
+  id: StockExchange.Market
+  children:
+  - StockExchange.Market.ExchangeRateService
+  - StockExchange.Market.FiatCurrency
+  - StockExchange.Market.MarketAlert
+  langs:
+  - csharp
+  - vb
+  name: StockExchange.Market
+  nameWithType: StockExchange.Market
+  fullName: StockExchange.Market
+  type: Namespace
+  assemblies:
+  - proj
+references:
+- uid: StockExchange.Market.ExchangeRateService
+  commentId: T:StockExchange.Market.ExchangeRateService
+  parent: StockExchange.Market
+  href: StockExchange.Market.ExchangeRateService.html
+  name: ExchangeRateService
+  nameWithType: ExchangeRateService
+  fullName: StockExchange.Market.ExchangeRateService
+- uid: StockExchange.Market.FiatCurrency
+  commentId: T:StockExchange.Market.FiatCurrency
+  href: StockExchange.Market.FiatCurrency.html
+  name: FiatCurrency
+  nameWithType: FiatCurrency
+  fullName: StockExchange.Market.FiatCurrency
+- uid: StockExchange.Market.MarketAlert
+  commentId: T:StockExchange.Market.MarketAlert
+  href: StockExchange.Market.MarketAlert.html
+  name: MarketAlert
+  nameWithType: MarketAlert
+  fullName: StockExchange.Market.MarketAlert
+- uid: StockExchange.Market
+  commentId: N:StockExchange.Market
+  href: StockExchange.html
+  name: StockExchange.Market
+  nameWithType: StockExchange.Market
+  fullName: StockExchange.Market
+  spec.csharp:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Market
+    name: Market
+    href: StockExchange.Market.html
+  spec.vb:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Market
+    name: Market
+    href: StockExchange.Market.html

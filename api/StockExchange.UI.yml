@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: StockExchange.UI
+  commentId: N:StockExchange.UI
+  id: StockExchange.UI
+  children:
+  - StockExchange.UI.ChartPrinter
+  - StockExchange.UI.ConsoleDashboard
+  - StockExchange.UI.CurrencyConverter
+  langs:
+  - csharp
+  - vb
+  name: StockExchange.UI
+  nameWithType: StockExchange.UI
+  fullName: StockExchange.UI
+  type: Namespace
+  assemblies:
+  - proj
+references:
+- uid: StockExchange.UI.ChartPrinter
+  commentId: T:StockExchange.UI.ChartPrinter
+  href: StockExchange.UI.ChartPrinter.html
+  name: ChartPrinter
+  nameWithType: ChartPrinter
+  fullName: StockExchange.UI.ChartPrinter
+- uid: StockExchange.UI.ConsoleDashboard
+  commentId: T:StockExchange.UI.ConsoleDashboard
+  href: StockExchange.UI.ConsoleDashboard.html
+  name: ConsoleDashboard
+  nameWithType: ConsoleDashboard
+  fullName: StockExchange.UI.ConsoleDashboard
+- uid: StockExchange.UI.CurrencyConverter
+  commentId: T:StockExchange.UI.CurrencyConverter
+  href: StockExchange.UI.CurrencyConverter.html
+  name: CurrencyConverter
+  nameWithType: CurrencyConverter
+  fullName: StockExchange.UI.CurrencyConverter

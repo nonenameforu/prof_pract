@@ -2,13 +2,20 @@
 
 namespace StockExchange.Crypto
 {
-    // Сервис крипторынка: котировки и имитация движения цены
+    /// <summary>
+    /// Сервис крипторынка. Управляет котировками криптовалют,
+    /// имитирует рыночную волатильность и хранит историю изменений цен.
+    /// </summary>
     public class CryptoMarketService
     {
         private readonly List<CryptoCurrency> _cryptos;
         private readonly List<PriceHistory> _history;
         private readonly Random _rng = new Random();
 
+        /// <summary>
+        /// Инициализирует сервис и заполняет список криптовалют
+        /// начальными рыночными данными (BTC, ETH, BNB).
+        /// </summary>
         public CryptoMarketService()
         {
             _history = new List<PriceHistory>();
@@ -20,7 +27,11 @@ namespace StockExchange.Crypto
             };
         }
 
-        // Имитируем волатильность ±2% (крипта волатильнее фиата)
+        /// <summary>
+        /// Имитирует один тик рынка: случайно изменяет курс каждой
+        /// криптовалюты в диапазоне ±2%, обновляет процентное изменение
+        /// за 24 часа и сохраняет запись в историю.
+        /// </summary>
         public void SimulateTick()
         {
             foreach (var c in _cryptos)
@@ -34,8 +45,17 @@ namespace StockExchange.Crypto
             }
         }
 
+        /// <summary>
+        /// Возвращает список всех поддерживаемых криптовалют.
+        /// </summary>
+        /// <returns>Список объектов <see cref="CryptoCurrency"/>.</returns>
         public List<CryptoCurrency> GetAll() => _cryptos;
 
+        /// <summary>
+        /// Возвращает историю изменений курса для указанной криптовалюты.
+        /// </summary>
+        /// <param name="code">Тикер криптовалюты (например, "BTC").</param>
+        /// <returns>Список записей <see cref="PriceHistory"/>.</returns>
         public List<PriceHistory> GetHistory(string code) =>
             _history.Where(h => h.CurrencyCode == code).ToList();
     }

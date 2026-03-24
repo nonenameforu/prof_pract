@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: StockExchange.Crypto
+  commentId: N:StockExchange.Crypto
+  id: StockExchange.Crypto
+  children:
+  - StockExchange.Crypto.CryptoCurrency
+  - StockExchange.Crypto.CryptoMarketService
+  - StockExchange.Crypto.CryptoPortfolio
+  langs:
+  - csharp
+  - vb
+  name: StockExchange.Crypto
+  nameWithType: StockExchange.Crypto
+  fullName: StockExchange.Crypto
+  type: Namespace
+  assemblies:
+  - proj
+references:
+- uid: StockExchange.Crypto.CryptoCurrency
+  commentId: T:StockExchange.Crypto.CryptoCurrency
+  href: StockExchange.Crypto.CryptoCurrency.html
+  name: CryptoCurrency
+  nameWithType: CryptoCurrency
+  fullName: StockExchange.Crypto.CryptoCurrency
+- uid: StockExchange.Crypto.CryptoMarketService
+  commentId: T:StockExchange.Crypto.CryptoMarketService
+  parent: StockExchange.Crypto
+  href: StockExchange.Crypto.CryptoMarketService.html
+  name: CryptoMarketService
+  nameWithType: CryptoMarketService
+  fullName: StockExchange.Crypto.CryptoMarketService
+- uid: StockExchange.Crypto.CryptoPortfolio
+  commentId: T:StockExchange.Crypto.CryptoPortfolio
+  href: StockExchange.Crypto.CryptoPortfolio.html
+  name: CryptoPortfolio
+  nameWithType: CryptoPortfolio
+  fullName: StockExchange.Crypto.CryptoPortfolio
+- uid: StockExchange.Crypto
+  commentId: N:StockExchange.Crypto
+  href: StockExchange.html
+  name: StockExchange.Crypto
+  nameWithType: StockExchange.Crypto
+  fullName: StockExchange.Crypto
+  spec.csharp:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Crypto
+    name: Crypto
+    href: StockExchange.Crypto.html
+  spec.vb:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Crypto
+    name: Crypto
+    href: StockExchange.Crypto.html

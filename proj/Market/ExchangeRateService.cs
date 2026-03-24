@@ -2,13 +2,20 @@
 
 namespace StockExchange.Market
 {
-    // Сервис обменных курсов фиатных валют
+    /// <summary>
+    /// Сервис управления курсами фиатных валют (USD, RUB, CNY).
+    /// Обеспечивает имитацию рыночных колебаний, конвертацию сумм
+    /// и хранение истории курсов.
+    /// </summary>
     public class ExchangeRateService
     {
         private readonly List<FiatCurrency> _currencies;
         private readonly List<PriceHistory> _history;
         private readonly Random _rng = new Random();
 
+        /// <summary>
+        /// Инициализирует сервис и заполняет список валют начальными курсами.
+        /// </summary>
         public ExchangeRateService()
         {
             _history = new List<PriceHistory>();
@@ -20,7 +27,11 @@ namespace StockExchange.Market
             };
         }
 
-        // Имитируем колебание курса ±0.5%
+        /// <summary>
+        /// Имитирует один тик рынка: случайно изменяет курс каждой валюты
+        /// в диапазоне ±0.5% и сохраняет новое значение в историю.
+        /// USD остаётся неизменным (базовая валюта).
+        /// </summary>
         public void SimulateTick()
         {
             foreach (var c in _currencies)
@@ -33,8 +44,20 @@ namespace StockExchange.Market
             }
         }
 
+        /// <summary>
+        /// Возвращает список всех поддерживаемых фиатных валют.
+        /// </summary>
+        /// <returns>Список объектов <see cref="FiatCurrency"/>.</returns>
         public List<FiatCurrency> GetAll() => _currencies;
 
+        /// <summary>
+        /// Конвертирует указанную сумму из одной валюты в другую
+        /// по текущим курсам.
+        /// </summary>
+        /// <param name="fromCode">Код исходной валюты.</param>
+        /// <param name="toCode">Код целевой валюты.</param>
+        /// <param name="amount">Сумма для конвертации.</param>
+        /// <returns>Сконвертированная сумма в целевой валюте.</returns>
         public decimal Convert(string fromCode, string toCode, decimal amount)
         {
             var from = _currencies.First(c => c.Code == fromCode);
@@ -42,6 +65,11 @@ namespace StockExchange.Market
             return amount * from.CurrentRate / to.CurrentRate;
         }
 
+        /// <summary>
+        /// Возвращает историю изменений курса для указанной валюты.
+        /// </summary>
+        /// <param name="code">Код валюты.</param>
+        /// <returns>Список записей <see cref="PriceHistory"/>.</returns>
         public List<PriceHistory> GetHistory(string code) =>
             _history.Where(h => h.CurrencyCode == code).ToList();
     }

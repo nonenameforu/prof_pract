@@ -1,0 +1,688 @@
+### YamlMime:ManagedReference
+items:
+- uid: StockExchange.Market.ExchangeRateService
+  commentId: T:StockExchange.Market.ExchangeRateService
+  id: ExchangeRateService
+  parent: StockExchange.Market
+  children:
+  - StockExchange.Market.ExchangeRateService.#ctor
+  - StockExchange.Market.ExchangeRateService.Convert(System.String,System.String,System.Decimal)
+  - StockExchange.Market.ExchangeRateService.GetAll
+  - StockExchange.Market.ExchangeRateService.GetHistory(System.String)
+  - StockExchange.Market.ExchangeRateService.SimulateTick
+  langs:
+  - csharp
+  - vb
+  name: ExchangeRateService
+  nameWithType: ExchangeRateService
+  fullName: StockExchange.Market.ExchangeRateService
+  type: Class
+  source:
+    remote:
+      path: proj/Market/ExchangeRateService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: ExchangeRateService
+    path: proj/Market/ExchangeRateService.cs
+    startLine: 9
+  assemblies:
+  - proj
+  namespace: StockExchange.Market
+  summary: >-
+    Сервис управления курсами фиатных валют (USD, RUB, CNY).
+
+    Обеспечивает имитацию рыночных колебаний, конвертацию сумм
+
+    и хранение истории курсов.
+  example: []
+  syntax:
+    content: public class ExchangeRateService
+    content.vb: Public Class ExchangeRateService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StockExchange.Market.ExchangeRateService.#ctor
+  commentId: M:StockExchange.Market.ExchangeRateService.#ctor
+  id: '#ctor'
+  parent: StockExchange.Market.ExchangeRateService
+  langs:
+  - csharp
+  - vb
+  name: ExchangeRateService()
+  nameWithType: ExchangeRateService.ExchangeRateService()
+  fullName: StockExchange.Market.ExchangeRateService.ExchangeRateService()
+  type: Constructor
+  source:
+    remote:
+      path: proj/Market/ExchangeRateService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: .ctor
+    path: proj/Market/ExchangeRateService.cs
+    startLine: 18
+  assemblies:
+  - proj
+  namespace: StockExchange.Market
+  summary: Инициализирует сервис и заполняет список валют начальными курсами.
+  example: []
+  syntax:
+    content: public ExchangeRateService()
+    content.vb: Public Sub New()
+  overload: StockExchange.Market.ExchangeRateService.#ctor*
+  nameWithType.vb: ExchangeRateService.New()
+  fullName.vb: StockExchange.Market.ExchangeRateService.New()
+  name.vb: New()
+- uid: StockExchange.Market.ExchangeRateService.SimulateTick
+  commentId: M:StockExchange.Market.ExchangeRateService.SimulateTick
+  id: SimulateTick
+  parent: StockExchange.Market.ExchangeRateService
+  langs:
+  - csharp
+  - vb
+  name: SimulateTick()
+  nameWithType: ExchangeRateService.SimulateTick()
+  fullName: StockExchange.Market.ExchangeRateService.SimulateTick()
+  type: Method
+  source:
+    remote:
+      path: proj/Market/ExchangeRateService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: SimulateTick
+    path: proj/Market/ExchangeRateService.cs
+    startLine: 34
+  assemblies:
+  - proj
+  namespace: StockExchange.Market
+  summary: >-
+    Имитирует один тик рынка: случайно изменяет курс каждой валюты
+
+    в диапазоне ±0.5% и сохраняет новое значение в историю.
+
+    USD остаётся неизменным (базовая валюта).
+  example: []
+  syntax:
+    content: public void SimulateTick()
+    content.vb: Public Sub SimulateTick()
+  overload: StockExchange.Market.ExchangeRateService.SimulateTick*
+- uid: StockExchange.Market.ExchangeRateService.GetAll
+  commentId: M:StockExchange.Market.ExchangeRateService.GetAll
+  id: GetAll
+  parent: StockExchange.Market.ExchangeRateService
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: ExchangeRateService.GetAll()
+  fullName: StockExchange.Market.ExchangeRateService.GetAll()
+  type: Method
+  source:
+    remote:
+      path: proj/Market/ExchangeRateService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: GetAll
+    path: proj/Market/ExchangeRateService.cs
+    startLine: 50
+  assemblies:
+  - proj
+  namespace: StockExchange.Market
+  summary: Возвращает список всех поддерживаемых фиатных валют.
+  example: []
+  syntax:
+    content: public List<FiatCurrency> GetAll()
+    return:
+      type: System.Collections.Generic.List{StockExchange.Market.FiatCurrency}
+      description: Список объектов <xref href="StockExchange.Market.FiatCurrency" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetAll() As List(Of FiatCurrency)
+  overload: StockExchange.Market.ExchangeRateService.GetAll*
+- uid: StockExchange.Market.ExchangeRateService.Convert(System.String,System.String,System.Decimal)
+  commentId: M:StockExchange.Market.ExchangeRateService.Convert(System.String,System.String,System.Decimal)
+  id: Convert(System.String,System.String,System.Decimal)
+  parent: StockExchange.Market.ExchangeRateService
+  langs:
+  - csharp
+  - vb
+  name: Convert(string, string, decimal)
+  nameWithType: ExchangeRateService.Convert(string, string, decimal)
+  fullName: StockExchange.Market.ExchangeRateService.Convert(string, string, decimal)
+  type: Method
+  source:
+    remote:
+      path: proj/Market/ExchangeRateService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: Convert
+    path: proj/Market/ExchangeRateService.cs
+    startLine: 60
+  assemblies:
+  - proj
+  namespace: StockExchange.Market
+  summary: >-
+    Конвертирует указанную сумму из одной валюты в другую
+
+    по текущим курсам.
+  example: []
+  syntax:
+    content: public decimal Convert(string fromCode, string toCode, decimal amount)
+    parameters:
+    - id: fromCode
+      type: System.String
+      description: Код исходной валюты.
+    - id: toCode
+      type: System.String
+      description: Код целевой валюты.
+    - id: amount
+      type: System.Decimal
+      description: Сумма для конвертации.
+    return:
+      type: System.Decimal
+      description: Сконвертированная сумма в целевой валюте.
+    content.vb: Public Function Convert(fromCode As String, toCode As String, amount As Decimal) As Decimal
+  overload: StockExchange.Market.ExchangeRateService.Convert*
+  nameWithType.vb: ExchangeRateService.Convert(String, String, Decimal)
+  fullName.vb: StockExchange.Market.ExchangeRateService.Convert(String, String, Decimal)
+  name.vb: Convert(String, String, Decimal)
+- uid: StockExchange.Market.ExchangeRateService.GetHistory(System.String)
+  commentId: M:StockExchange.Market.ExchangeRateService.GetHistory(System.String)
+  id: GetHistory(System.String)
+  parent: StockExchange.Market.ExchangeRateService
+  langs:
+  - csharp
+  - vb
+  name: GetHistory(string)
+  nameWithType: ExchangeRateService.GetHistory(string)
+  fullName: StockExchange.Market.ExchangeRateService.GetHistory(string)
+  type: Method
+  source:
+    remote:
+      path: proj/Market/ExchangeRateService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: GetHistory
+    path: proj/Market/ExchangeRateService.cs
+    startLine: 72
+  assemblies:
+  - proj
+  namespace: StockExchange.Market
+  summary: Возвращает историю изменений курса для указанной валюты.
+  example: []
+  syntax:
+    content: public List<PriceHistory> GetHistory(string code)
+    parameters:
+    - id: code
+      type: System.String
+      description: Код валюты.
+    return:
+      type: System.Collections.Generic.List{StockExchange.Shared.PriceHistory}
+      description: Список записей <xref href="StockExchange.Shared.PriceHistory" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetHistory(code As String) As List(Of PriceHistory)
+  overload: StockExchange.Market.ExchangeRateService.GetHistory*
+  nameWithType.vb: ExchangeRateService.GetHistory(String)
+  fullName.vb: StockExchange.Market.ExchangeRateService.GetHistory(String)
+  name.vb: GetHistory(String)
+references:
+- uid: StockExchange.Market
+  commentId: N:StockExchange.Market
+  href: StockExchange.html
+  name: StockExchange.Market
+  nameWithType: StockExchange.Market
+  fullName: StockExchange.Market
+  spec.csharp:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Market
+    name: Market
+    href: StockExchange.Market.html
+  spec.vb:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Market
+    name: Market
+    href: StockExchange.Market.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StockExchange.Market.ExchangeRateService.#ctor*
+  commentId: Overload:StockExchange.Market.ExchangeRateService.#ctor
+  href: StockExchange.Market.ExchangeRateService.html#StockExchange_Market_ExchangeRateService__ctor
+  name: ExchangeRateService
+  nameWithType: ExchangeRateService.ExchangeRateService
+  fullName: StockExchange.Market.ExchangeRateService.ExchangeRateService
+  nameWithType.vb: ExchangeRateService.New
+  fullName.vb: StockExchange.Market.ExchangeRateService.New
+  name.vb: New
+- uid: StockExchange.Market.ExchangeRateService.SimulateTick*
+  commentId: Overload:StockExchange.Market.ExchangeRateService.SimulateTick
+  href: StockExchange.Market.ExchangeRateService.html#StockExchange_Market_ExchangeRateService_SimulateTick
+  name: SimulateTick
+  nameWithType: ExchangeRateService.SimulateTick
+  fullName: StockExchange.Market.ExchangeRateService.SimulateTick
+- uid: StockExchange.Market.FiatCurrency
+  commentId: T:StockExchange.Market.FiatCurrency
+  href: StockExchange.Market.FiatCurrency.html
+  name: FiatCurrency
+  nameWithType: FiatCurrency
+  fullName: StockExchange.Market.FiatCurrency
+- uid: StockExchange.Market.ExchangeRateService.GetAll*
+  commentId: Overload:StockExchange.Market.ExchangeRateService.GetAll
+  href: StockExchange.Market.ExchangeRateService.html#StockExchange_Market_ExchangeRateService_GetAll
+  name: GetAll
+  nameWithType: ExchangeRateService.GetAll
+  fullName: StockExchange.Market.ExchangeRateService.GetAll
+- uid: System.Collections.Generic.List{StockExchange.Market.FiatCurrency}
+  commentId: T:System.Collections.Generic.List{StockExchange.Market.FiatCurrency}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FiatCurrency>
+  nameWithType: List<FiatCurrency>
+  fullName: System.Collections.Generic.List<StockExchange.Market.FiatCurrency>
+  nameWithType.vb: List(Of FiatCurrency)
+  fullName.vb: System.Collections.Generic.List(Of StockExchange.Market.FiatCurrency)
+  name.vb: List(Of FiatCurrency)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: StockExchange.Market.FiatCurrency
+    name: FiatCurrency
+    href: StockExchange.Market.FiatCurrency.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StockExchange.Market.FiatCurrency
+    name: FiatCurrency
+    href: StockExchange.Market.FiatCurrency.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: StockExchange.Market.ExchangeRateService.Convert*
+  commentId: Overload:StockExchange.Market.ExchangeRateService.Convert
+  href: StockExchange.Market.ExchangeRateService.html#StockExchange_Market_ExchangeRateService_Convert_System_String_System_String_System_Decimal_
+  name: Convert
+  nameWithType: ExchangeRateService.Convert
+  fullName: StockExchange.Market.ExchangeRateService.Convert
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: StockExchange.Shared.PriceHistory
+  commentId: T:StockExchange.Shared.PriceHistory
+  href: StockExchange.Shared.PriceHistory.html
+  name: PriceHistory
+  nameWithType: PriceHistory
+  fullName: StockExchange.Shared.PriceHistory
+- uid: StockExchange.Market.ExchangeRateService.GetHistory*
+  commentId: Overload:StockExchange.Market.ExchangeRateService.GetHistory
+  href: StockExchange.Market.ExchangeRateService.html#StockExchange_Market_ExchangeRateService_GetHistory_System_String_
+  name: GetHistory
+  nameWithType: ExchangeRateService.GetHistory
+  fullName: StockExchange.Market.ExchangeRateService.GetHistory
+- uid: System.Collections.Generic.List{StockExchange.Shared.PriceHistory}
+  commentId: T:System.Collections.Generic.List{StockExchange.Shared.PriceHistory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PriceHistory>
+  nameWithType: List<PriceHistory>
+  fullName: System.Collections.Generic.List<StockExchange.Shared.PriceHistory>
+  nameWithType.vb: List(Of PriceHistory)
+  fullName.vb: System.Collections.Generic.List(Of StockExchange.Shared.PriceHistory)
+  name.vb: List(Of PriceHistory)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: StockExchange.Shared.PriceHistory
+    name: PriceHistory
+    href: StockExchange.Shared.PriceHistory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StockExchange.Shared.PriceHistory
+    name: PriceHistory
+    href: StockExchange.Shared.PriceHistory.html
+  - name: )

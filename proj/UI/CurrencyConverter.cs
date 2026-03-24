@@ -2,16 +2,29 @@
 
 namespace StockExchange.UI
 {
-    // Интерактивный конвертер валют
+    /// <summary>
+    /// Интерактивный конвертер валют. Запрашивает у пользователя
+    /// исходную валюту, целевую валюту и сумму, затем выводит результат
+    /// конвертации по текущему курсу.
+    /// </summary>
     public class CurrencyConverter
     {
         private readonly ExchangeRateService _service;
 
+        /// <summary>
+        /// Инициализирует конвертер с привязкой к сервису курсов.
+        /// </summary>
+        /// <param name="service">Сервис фиатных валют.</param>
         public CurrencyConverter(ExchangeRateService service)
         {
             _service = service;
         }
 
+        /// <summary>
+        /// Запускает интерактивный режим конвертации в консоли.
+        /// Пользователь последовательно вводит код исходной валюты,
+        /// код целевой валюты и сумму. Результат выводится в консоль.
+        /// </summary>
         public void RunInteractive()
         {
             Console.WriteLine("\n=== Конвертер валют ===");

@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: StockExchange.Shared
+  commentId: N:StockExchange.Shared
+  id: StockExchange.Shared
+  children:
+  - StockExchange.Shared.Currency
+  - StockExchange.Shared.PriceHistory
+  langs:
+  - csharp
+  - vb
+  name: StockExchange.Shared
+  nameWithType: StockExchange.Shared
+  fullName: StockExchange.Shared
+  type: Namespace
+  assemblies:
+  - proj
+references:
+- uid: StockExchange.Shared.Currency
+  commentId: T:StockExchange.Shared.Currency
+  parent: StockExchange.Shared
+  href: StockExchange.Shared.Currency.html
+  name: Currency
+  nameWithType: Currency
+  fullName: StockExchange.Shared.Currency
+- uid: StockExchange.Shared.PriceHistory
+  commentId: T:StockExchange.Shared.PriceHistory
+  href: StockExchange.Shared.PriceHistory.html
+  name: PriceHistory
+  nameWithType: PriceHistory
+  fullName: StockExchange.Shared.PriceHistory
+- uid: StockExchange.Shared
+  commentId: N:StockExchange.Shared
+  href: StockExchange.html
+  name: StockExchange.Shared
+  nameWithType: StockExchange.Shared
+  fullName: StockExchange.Shared
+  spec.csharp:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Shared
+    name: Shared
+    href: StockExchange.Shared.html
+  spec.vb:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Shared
+    name: Shared
+    href: StockExchange.Shared.html

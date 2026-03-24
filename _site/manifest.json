@@ -1,0 +1,308 @@
+{
+  "source_base_path": "D:/Универ/Открытое 4.5/Професиональная практика программной инжинерии/labs_prof/prof_pract",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Crypto.CryptoCurrency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Crypto.CryptoCurrency.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Crypto.CryptoCurrency",
+      "Summary": "<p sourcefile=\"api/StockExchange.Crypto.CryptoCurrency.yml\" sourcestartlinenumber=\"1\">Представляет криптовалюту (BTC, ETH, BNB и др.).\nРасширяет базовую модель <xref href=\"StockExchange.Shared.Currency\" data-throw-if-not-resolved=\"false\"></xref> рыночными\nпоказателями: капитализацией, объёмом торгов и изменением за 24 часа.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Crypto.CryptoMarketService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Crypto.CryptoMarketService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Crypto.CryptoMarketService",
+      "Summary": "<p sourcefile=\"api/StockExchange.Crypto.CryptoMarketService.yml\" sourcestartlinenumber=\"1\">Сервис крипторынка. Управляет котировками криптовалют,\nимитирует рыночную волатильность и хранит историю изменений цен.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Crypto.CryptoPortfolio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Crypto.CryptoPortfolio.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Crypto.CryptoPortfolio",
+      "Summary": "<p sourcefile=\"api/StockExchange.Crypto.CryptoPortfolio.yml\" sourcestartlinenumber=\"1\">Портфель криптовалют пользователя.\nПозволяет покупать и продавать криптовалюты, а также\nрассчитывать суммарную стоимость портфеля по текущим курсам.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Crypto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Crypto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Crypto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Market.ExchangeRateService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Market.ExchangeRateService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Market.ExchangeRateService",
+      "Summary": "<p sourcefile=\"api/StockExchange.Market.ExchangeRateService.yml\" sourcestartlinenumber=\"1\">Сервис управления курсами фиатных валют (USD, RUB, CNY).\nОбеспечивает имитацию рыночных колебаний, конвертацию сумм\nи хранение истории курсов.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Market.FiatCurrency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Market.FiatCurrency.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Market.FiatCurrency",
+      "Summary": "<p sourcefile=\"api/StockExchange.Market.FiatCurrency.yml\" sourcestartlinenumber=\"1\">Представляет фиатную (государственную) валюту.\nНаследует базовую модель <xref href=\"StockExchange.Shared.Currency\" data-throw-if-not-resolved=\"false\"></xref> и расширяет её\nсведениями о стране и символе валюты.\nПоддерживаемые валюты: USD, RUB, CNY.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Market.MarketAlert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Market.MarketAlert.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Market.MarketAlert",
+      "Summary": "<p sourcefile=\"api/StockExchange.Market.MarketAlert.yml\" sourcestartlinenumber=\"1\">Модуль уведомлений: срабатывает когда курс валюты\nдостигает заданного порогового значения.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Market.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Market.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Market",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Shared.Currency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Shared.Currency.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Shared.Currency",
+      "Summary": "<p sourcefile=\"api/StockExchange.Shared.Currency.yml\" sourcestartlinenumber=\"1\">Базовая модель валюты. Является родительским классом для\n<xref href=\"StockExchange.Market.FiatCurrency\" data-throw-if-not-resolved=\"false\"></xref> и\n<xref href=\"StockExchange.Crypto.CryptoCurrency\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Shared.PriceHistory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Shared.PriceHistory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Shared.PriceHistory",
+      "Summary": "<p sourcefile=\"api/StockExchange.Shared.PriceHistory.yml\" sourcestartlinenumber=\"1\">Представляет одну запись об изменении курса валюты в конкретный момент времени.\nИспользуется для построения графиков и аналитики.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.Shared.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.Shared",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.UI.ChartPrinter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.UI.ChartPrinter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.UI.ChartPrinter",
+      "Summary": "<p sourcefile=\"api/StockExchange.UI.ChartPrinter.yml\" sourcestartlinenumber=\"1\">Модуль визуализации. Строит ASCII-график изменения курса валюты\nна основе истории котировок и выводит его в консоль.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.UI.ConsoleDashboard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.UI.ConsoleDashboard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.UI.ConsoleDashboard",
+      "Summary": "<p sourcefile=\"api/StockExchange.UI.ConsoleDashboard.yml\" sourcestartlinenumber=\"1\">Консольный дашборд. Отображает актуальные котировки фиатных валют\nи криптовалют в виде форматированной таблицы в консоли.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.UI.CurrencyConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.UI.CurrencyConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.UI.CurrencyConverter",
+      "Summary": "<p sourcefile=\"api/StockExchange.UI.CurrencyConverter.yml\" sourcestartlinenumber=\"1\">Интерактивный конвертер валют. Запрашивает у пользователя\nисходную валюту, целевую валюту и сумму, затем выводит результат\nконвертации по текущему курсу.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StockExchange.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StockExchange.UI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StockExchange.UI",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

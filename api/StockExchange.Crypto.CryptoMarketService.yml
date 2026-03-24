@@ -1,0 +1,624 @@
+### YamlMime:ManagedReference
+items:
+- uid: StockExchange.Crypto.CryptoMarketService
+  commentId: T:StockExchange.Crypto.CryptoMarketService
+  id: CryptoMarketService
+  parent: StockExchange.Crypto
+  children:
+  - StockExchange.Crypto.CryptoMarketService.#ctor
+  - StockExchange.Crypto.CryptoMarketService.GetAll
+  - StockExchange.Crypto.CryptoMarketService.GetHistory(System.String)
+  - StockExchange.Crypto.CryptoMarketService.SimulateTick
+  langs:
+  - csharp
+  - vb
+  name: CryptoMarketService
+  nameWithType: CryptoMarketService
+  fullName: StockExchange.Crypto.CryptoMarketService
+  type: Class
+  source:
+    remote:
+      path: proj/Crypto/CryptoMarketService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: CryptoMarketService
+    path: proj/Crypto/CryptoMarketService.cs
+    startLine: 8
+  assemblies:
+  - proj
+  namespace: StockExchange.Crypto
+  summary: >-
+    Сервис крипторынка. Управляет котировками криптовалют,
+
+    имитирует рыночную волатильность и хранит историю изменений цен.
+  example: []
+  syntax:
+    content: public class CryptoMarketService
+    content.vb: Public Class CryptoMarketService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StockExchange.Crypto.CryptoMarketService.#ctor
+  commentId: M:StockExchange.Crypto.CryptoMarketService.#ctor
+  id: '#ctor'
+  parent: StockExchange.Crypto.CryptoMarketService
+  langs:
+  - csharp
+  - vb
+  name: CryptoMarketService()
+  nameWithType: CryptoMarketService.CryptoMarketService()
+  fullName: StockExchange.Crypto.CryptoMarketService.CryptoMarketService()
+  type: Constructor
+  source:
+    remote:
+      path: proj/Crypto/CryptoMarketService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: .ctor
+    path: proj/Crypto/CryptoMarketService.cs
+    startLine: 18
+  assemblies:
+  - proj
+  namespace: StockExchange.Crypto
+  summary: >-
+    Инициализирует сервис и заполняет список криптовалют
+
+    начальными рыночными данными (BTC, ETH, BNB).
+  example: []
+  syntax:
+    content: public CryptoMarketService()
+    content.vb: Public Sub New()
+  overload: StockExchange.Crypto.CryptoMarketService.#ctor*
+  nameWithType.vb: CryptoMarketService.New()
+  fullName.vb: StockExchange.Crypto.CryptoMarketService.New()
+  name.vb: New()
+- uid: StockExchange.Crypto.CryptoMarketService.SimulateTick
+  commentId: M:StockExchange.Crypto.CryptoMarketService.SimulateTick
+  id: SimulateTick
+  parent: StockExchange.Crypto.CryptoMarketService
+  langs:
+  - csharp
+  - vb
+  name: SimulateTick()
+  nameWithType: CryptoMarketService.SimulateTick()
+  fullName: StockExchange.Crypto.CryptoMarketService.SimulateTick()
+  type: Method
+  source:
+    remote:
+      path: proj/Crypto/CryptoMarketService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: SimulateTick
+    path: proj/Crypto/CryptoMarketService.cs
+    startLine: 34
+  assemblies:
+  - proj
+  namespace: StockExchange.Crypto
+  summary: >-
+    Имитирует один тик рынка: случайно изменяет курс каждой
+
+    криптовалюты в диапазоне ±2%, обновляет процентное изменение
+
+    за 24 часа и сохраняет запись в историю.
+  example: []
+  syntax:
+    content: public void SimulateTick()
+    content.vb: Public Sub SimulateTick()
+  overload: StockExchange.Crypto.CryptoMarketService.SimulateTick*
+- uid: StockExchange.Crypto.CryptoMarketService.GetAll
+  commentId: M:StockExchange.Crypto.CryptoMarketService.GetAll
+  id: GetAll
+  parent: StockExchange.Crypto.CryptoMarketService
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: CryptoMarketService.GetAll()
+  fullName: StockExchange.Crypto.CryptoMarketService.GetAll()
+  type: Method
+  source:
+    remote:
+      path: proj/Crypto/CryptoMarketService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: GetAll
+    path: proj/Crypto/CryptoMarketService.cs
+    startLine: 51
+  assemblies:
+  - proj
+  namespace: StockExchange.Crypto
+  summary: Возвращает список всех поддерживаемых криптовалют.
+  example: []
+  syntax:
+    content: public List<CryptoCurrency> GetAll()
+    return:
+      type: System.Collections.Generic.List{StockExchange.Crypto.CryptoCurrency}
+      description: Список объектов <xref href="StockExchange.Crypto.CryptoCurrency" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetAll() As List(Of CryptoCurrency)
+  overload: StockExchange.Crypto.CryptoMarketService.GetAll*
+- uid: StockExchange.Crypto.CryptoMarketService.GetHistory(System.String)
+  commentId: M:StockExchange.Crypto.CryptoMarketService.GetHistory(System.String)
+  id: GetHistory(System.String)
+  parent: StockExchange.Crypto.CryptoMarketService
+  langs:
+  - csharp
+  - vb
+  name: GetHistory(string)
+  nameWithType: CryptoMarketService.GetHistory(string)
+  fullName: StockExchange.Crypto.CryptoMarketService.GetHistory(string)
+  type: Method
+  source:
+    remote:
+      path: proj/Crypto/CryptoMarketService.cs
+      branch: main
+      repo: https://github.com/nonenameforu/prof_pract.git
+    id: GetHistory
+    path: proj/Crypto/CryptoMarketService.cs
+    startLine: 58
+  assemblies:
+  - proj
+  namespace: StockExchange.Crypto
+  summary: Возвращает историю изменений курса для указанной криптовалюты.
+  example: []
+  syntax:
+    content: public List<PriceHistory> GetHistory(string code)
+    parameters:
+    - id: code
+      type: System.String
+      description: Тикер криптовалюты (например, "BTC").
+    return:
+      type: System.Collections.Generic.List{StockExchange.Shared.PriceHistory}
+      description: Список записей <xref href="StockExchange.Shared.PriceHistory" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetHistory(code As String) As List(Of PriceHistory)
+  overload: StockExchange.Crypto.CryptoMarketService.GetHistory*
+  nameWithType.vb: CryptoMarketService.GetHistory(String)
+  fullName.vb: StockExchange.Crypto.CryptoMarketService.GetHistory(String)
+  name.vb: GetHistory(String)
+references:
+- uid: StockExchange.Crypto
+  commentId: N:StockExchange.Crypto
+  href: StockExchange.html
+  name: StockExchange.Crypto
+  nameWithType: StockExchange.Crypto
+  fullName: StockExchange.Crypto
+  spec.csharp:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Crypto
+    name: Crypto
+    href: StockExchange.Crypto.html
+  spec.vb:
+  - uid: StockExchange
+    name: StockExchange
+    href: StockExchange.html
+  - name: .
+  - uid: StockExchange.Crypto
+    name: Crypto
+    href: StockExchange.Crypto.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StockExchange.Crypto.CryptoMarketService.#ctor*
+  commentId: Overload:StockExchange.Crypto.CryptoMarketService.#ctor
+  href: StockExchange.Crypto.CryptoMarketService.html#StockExchange_Crypto_CryptoMarketService__ctor
+  name: CryptoMarketService
+  nameWithType: CryptoMarketService.CryptoMarketService
+  fullName: StockExchange.Crypto.CryptoMarketService.CryptoMarketService
+  nameWithType.vb: CryptoMarketService.New
+  fullName.vb: StockExchange.Crypto.CryptoMarketService.New
+  name.vb: New
+- uid: StockExchange.Crypto.CryptoMarketService.SimulateTick*
+  commentId: Overload:StockExchange.Crypto.CryptoMarketService.SimulateTick
+  href: StockExchange.Crypto.CryptoMarketService.html#StockExchange_Crypto_CryptoMarketService_SimulateTick
+  name: SimulateTick
+  nameWithType: CryptoMarketService.SimulateTick
+  fullName: StockExchange.Crypto.CryptoMarketService.SimulateTick
+- uid: StockExchange.Crypto.CryptoCurrency
+  commentId: T:StockExchange.Crypto.CryptoCurrency
+  href: StockExchange.Crypto.CryptoCurrency.html
+  name: CryptoCurrency
+  nameWithType: CryptoCurrency
+  fullName: StockExchange.Crypto.CryptoCurrency
+- uid: StockExchange.Crypto.CryptoMarketService.GetAll*
+  commentId: Overload:StockExchange.Crypto.CryptoMarketService.GetAll
+  href: StockExchange.Crypto.CryptoMarketService.html#StockExchange_Crypto_CryptoMarketService_GetAll
+  name: GetAll
+  nameWithType: CryptoMarketService.GetAll
+  fullName: StockExchange.Crypto.CryptoMarketService.GetAll
+- uid: System.Collections.Generic.List{StockExchange.Crypto.CryptoCurrency}
+  commentId: T:System.Collections.Generic.List{StockExchange.Crypto.CryptoCurrency}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CryptoCurrency>
+  nameWithType: List<CryptoCurrency>
+  fullName: System.Collections.Generic.List<StockExchange.Crypto.CryptoCurrency>
+  nameWithType.vb: List(Of CryptoCurrency)
+  fullName.vb: System.Collections.Generic.List(Of StockExchange.Crypto.CryptoCurrency)
+  name.vb: List(Of CryptoCurrency)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: StockExchange.Crypto.CryptoCurrency
+    name: CryptoCurrency
+    href: StockExchange.Crypto.CryptoCurrency.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StockExchange.Crypto.CryptoCurrency
+    name: CryptoCurrency
+    href: StockExchange.Crypto.CryptoCurrency.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: StockExchange.Shared.PriceHistory
+  commentId: T:StockExchange.Shared.PriceHistory
+  href: StockExchange.Shared.PriceHistory.html
+  name: PriceHistory
+  nameWithType: PriceHistory
+  fullName: StockExchange.Shared.PriceHistory
+- uid: StockExchange.Crypto.CryptoMarketService.GetHistory*
+  commentId: Overload:StockExchange.Crypto.CryptoMarketService.GetHistory
+  href: StockExchange.Crypto.CryptoMarketService.html#StockExchange_Crypto_CryptoMarketService_GetHistory_System_String_
+  name: GetHistory
+  nameWithType: CryptoMarketService.GetHistory
+  fullName: StockExchange.Crypto.CryptoMarketService.GetHistory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{StockExchange.Shared.PriceHistory}
+  commentId: T:System.Collections.Generic.List{StockExchange.Shared.PriceHistory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PriceHistory>
+  nameWithType: List<PriceHistory>
+  fullName: System.Collections.Generic.List<StockExchange.Shared.PriceHistory>
+  nameWithType.vb: List(Of PriceHistory)
+  fullName.vb: System.Collections.Generic.List(Of StockExchange.Shared.PriceHistory)
+  name.vb: List(Of PriceHistory)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: StockExchange.Shared.PriceHistory
+    name: PriceHistory
+    href: StockExchange.Shared.PriceHistory.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StockExchange.Shared.PriceHistory
+    name: PriceHistory
+    href: StockExchange.Shared.PriceHistory.html
+  - name: )
